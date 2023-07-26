@@ -12,5 +12,9 @@
     if ( $result = mysqli_query($link, $sql) ) { 
         echo "建立成功";
     }
+    $sql = "SELECT pID from product";
+    if ( $result = mysqli_query($link, $sql) ) { 
+        echo "se suc";
+    }
     mysqli_close($link);
 ?>
